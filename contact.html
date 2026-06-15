@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Upfinity</title>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div>
+      <a href="index.html"><img src="images/name.png" alt="Upfinity" class="up-name" style="width: 140px; height: 32px;"></a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <h2>To elevate your brand with us</h2>
+  
+    <div class="services-checkboxes">
+      <label><input type="checkbox" name="webdev"> Web Development</label>
+      <label><input type="checkbox" name="digmar"> Digital Marketing</label>
+      <label><input type="checkbox" name="analty"> Analytics</label>
+      <label><input type="checkbox" name="smm"> Social Media Marketing</label>
+      <label><input type="checkbox" name="poster"> Poster and Creative Design</label>
+      <label><input type="checkbox" name="logo"> Logo and Brand Identity</label>
+    </div>
+  
+    <form action="/submit" method="post">
+      <label for="name">Name *</label>
+      <input id="name" name="name" type="text" placeholder="Let us know who you are" required>
+  
+      <label for="number">Phone Number *</label>
+      <input type="tel" id="number" name="number" pattern="[0-9]{10}" placeholder="Leave your number here" required>
+  
+      <label for="mail">E-mail *</label>
+      <input type="email" id="mail" name="mail" placeholder="We will never spam you!" required>
+  
+      <label for="companyname">About your Company</label>
+      <textarea id="companyname" name="companyname" placeholder="Tell us your company name"></textarea>
+  
+      <button class="submit-btn" type="submit">Get a Quote</button>
+    </form>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-container">
+      <p class="copyright">© Upfinity. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://upfinity-git.github.io/upfinity-site/">Home</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

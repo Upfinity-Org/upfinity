@@ -1,0 +1,252 @@
+/* ensuring all content respects screen boundaries*/
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/*---------------------*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #7137d4, #5d87e1);
+  color: #2a2b3f;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #7137d4, #5d87e1);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-container h1 {
+  font-size: 32px;
+  color: #30bd9b;
+  margin-bottom: 10px;
+}
+
+.contact-container h2 {
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Neatly Aligned Checkboxes Section */
+.services-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+}
+
+.services-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #f0f0f0;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.services-checkboxes input[type="checkbox"] {
+  accent-color: #30bd9b;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.services-checkboxes label:hover {
+  background: linear-gradient(to right, #7137d4, #5d87e1);
+  color: white;
+}
+
+/* Form Elements */
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  background: linear-gradient(to right, #7137d4, #5d87e1);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #000000;
+  color: white;
+  padding: 0px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: overline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .services {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+
+  .services-checkboxes {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* 🔧 Global Layout Fix */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 🔧 Form Container on Small Devices */
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 30px 20px;
+    padding: 30px 20px;
+  }
+}
+
+/* 🔧 Checkbox and Input Layout */
+@media (max-width: 600px) {
+  .services-checkboxes {
+    grid-template-columns: 1fr;
+  }
+
+  form label,
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+/* 🔧 Header & Navigation */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 10px 8px;
+    display: inline-block;
+  }
+}
+
+/* 🔧 Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-links a {
+    margin: 5px 10px;
+  }
+}
