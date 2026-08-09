@@ -4,66 +4,173 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | Upfinity</title>
+  <meta name="description" content="Tell Upfinity about your project and get a quote for web development, digital marketing, analytics, or brand design." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/contact.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
+<body class="js-off">
 
-  <!-- Header -->
   <header>
-    <div>
-      <a href="index.html"><img src="images/name.png" alt="Upfinity" class="up-name" style="width: 140px; height: 32px;"></a>
+    <div class="header-inner">
+      <a href="index.html" class="brand-link"><img src="images/name.png" alt="Upfinity" class="up-name"></a>
+
+      <nav id="site-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="index.html#services">Services</a>
-      <a href="index.html#about">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
   </header>
 
-  <div class="contact-container">
-    <h1>Contact Us</h1>
-    <h2>To elevate your brand with us</h2>
-  
-    <div class="services-checkboxes">
-      <label><input type="checkbox" name="webdev"> Web Development</label>
-      <label><input type="checkbox" name="digmar"> Digital Marketing</label>
-      <label><input type="checkbox" name="analty"> Analytics</label>
-      <label><input type="checkbox" name="smm"> Social Media Marketing</label>
-      <label><input type="checkbox" name="poster"> Poster and Creative Design</label>
-      <label><input type="checkbox" name="logo"> Logo and Brand Identity</label>
+  <section class="contact-hero">
+    <div class="container">
+      <span class="eyebrow on-dark">Let's talk</span>
+      <h1>Contact Us</h1>
+      <p>To elevate your brand with us</p>
     </div>
-  
-    <form action="/submit" method="post">
-      <label for="name">Name *</label>
-      <input id="name" name="name" type="text" placeholder="Let us know who you are" required>
-  
-      <label for="number">Phone Number *</label>
-      <input type="tel" id="number" name="number" pattern="[0-9]{10}" placeholder="Leave your number here" required>
-  
-      <label for="mail">E-mail *</label>
-      <input type="email" id="mail" name="mail" placeholder="We will never spam you!" required>
-  
-      <label for="companyname">About your Company</label>
-      <textarea id="companyname" name="companyname" placeholder="Tell us your company name"></textarea>
-  
-      <button class="submit-btn" type="submit">Get a Quote</button>
-    </form>
-  </div>
-  
+  </section>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <div class="footer-container">
-      <p class="copyright">© Upfinity. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="https://upfinity-git.github.io/upfinity-site/">Home</a>
-        <a href="contact.html">Contact Us</a>
+  <div class="contact-wrap">
+    <div class="contact-grid" data-reveal>
+
+      <aside class="contact-side">
+        <div class="contact-side-inner">
+          <h2>Get in touch</h2>
+          <p>Share a few details about your project and we'll get back to you with next steps.</p>
+
+          <div class="contact-detail">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span>
+              <strong>Email</strong>
+              <span>upfinity.help@gmail.com</span>
+            </span>
+          </div>
+
+          <div class="contact-detail">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3 7.7 8 9 5-1.3 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <span>
+              <strong>Response time</strong>
+              <span>We reply as soon as we can</span>
+            </span>
+          </div>
+
+          <div class="contact-services-list">
+            <p>What we help with</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Web Development</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Digital Marketing</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Analytics</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Brand &amp; Creative Design</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <div class="contact-form-side">
+        <p class="form-lead">Select the services you're interested in, then leave your details below.</p>
+
+        <div class="services-checkboxes">
+          <label><input type="checkbox" name="webdev"> Web Development</label>
+          <label><input type="checkbox" name="digmar"> Digital Marketing</label>
+          <label><input type="checkbox" name="analty"> Analytics</label>
+          <label><input type="checkbox" name="smm"> Social Media Marketing</label>
+          <label><input type="checkbox" name="poster"> Poster and Creative Design</label>
+          <label><input type="checkbox" name="logo"> Logo and Brand Identity</label>
+        </div>
+
+        <form action="/submit" method="post">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name <span class="req">*</span></label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.4-3.6 4.3-5.5 7.5-5.5s6.1 1.9 7.5 5.5"/></svg>
+                <input id="name" name="name" type="text" placeholder="Your full name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="number">Phone Number <span class="req">*</span></label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg>
+                <input type="tel" id="number" name="number" pattern="[0-9]{10}" placeholder="Your phone number" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mail">E-mail <span class="req">*</span></label>
+            <div class="input-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <input type="email" id="mail" name="mail" placeholder="We will never spam you!" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="companyname">About your Company</label>
+            <div class="input-wrap">
+              <svg class="icon-top" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="9" width="7" height="12"/><path d="M7 7h.01M10 7h.01M7 11h.01M10 11h.01M7 15h.01M10 15h.01"/></svg>
+              <textarea id="companyname" name="companyname" placeholder="Tell us a little about your company"></textarea>
+            </div>
+          </div>
+
+          <button class="submit-btn btn-about" type="submit">Get a Quote</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <footer id="contact-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/name.png" alt="Upfinity" class="up-name">
+          <p>A digital services partner helping growing businesses build websites, run marketing, and track what works.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="https://upfinity-git.github.io/upfinity-site/">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="mailto:upfinity.help@gmail.com">upfinity.help@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-container">
+        <p class="copyright">© Upfinity. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://upfinity-git.github.io/upfinity-site/">Home</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
