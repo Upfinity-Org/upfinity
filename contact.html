@@ -3,8 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Upfinity</title>
-  <meta name="description" content="Tell Upfinity about your project and get a quote for web development, digital marketing, analytics, or brand design." />
+  <title>Contact Us | Get a Free Quote — Upfinity Digital Marketing Agency</title>
+  <meta name="description" content="Tell Upfinity about your project and get a customised quote for web development, SEO, digital marketing, social media, or brand design — plus a free Digital X-Ray audit." />
+  <meta name="keywords" content="contact digital marketing agency, get a quote web development, free website audit, free digital marketing consultation, hire SEO agency India, website design quote, Upfinity contact" />
+  <meta name="author" content="Upfinity" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#4b30bd" />
+  <link rel="canonical" href="https://upfinityteam.netlify.app/contact.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Upfinity" />
+  <meta property="og:url" content="https://upfinityteam.netlify.app/contact.html" />
+  <meta property="og:title" content="Contact Us | Get a Free Quote — Upfinity Digital Marketing Agency" />
+  <meta property="og:description" content="Share a few details about your project and get a customised quote from Upfinity — web development, SEO, digital marketing, social media, and brand design." />
+  <meta property="og:image" content="https://upfinityteam.netlify.app/images/banner-img.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | Get a Free Quote — Upfinity Digital Marketing Agency" />
+  <meta name="twitter:description" content="Share a few details about your project and get a customised quote from Upfinity — web development, SEO, digital marketing, social media, and brand design." />
+  <meta name="twitter:image" content="https://upfinityteam.netlify.app/images/banner-img.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +42,11 @@
 
       <nav id="site-nav">
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="https://upfinityteam.netlify.app/">Home</a></li>
           <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -92,7 +114,12 @@
           <label><input type="checkbox" name="logo"> Logo and Brand Identity</label>
         </div>
 
-        <form action="/submit" method="post">
+        <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="visually-hidden" aria-hidden="true">
+            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+
           <div class="field-row">
             <div class="field">
               <label for="name">Name <span class="req">*</span></label>
@@ -128,6 +155,7 @@
           </div>
 
           <button class="submit-btn btn-about" type="submit">Get a Quote</button>
+          <p class="form-note" id="form-note" role="status" aria-live="polite">We typically respond within 1 business day.</p>
         </form>
       </div>
 
@@ -144,9 +172,11 @@
         <div class="footer-col">
           <h4>Navigate</h4>
           <ul>
-            <li><a href="https://upfinity-git.github.io/upfinity-site/">Home</a></li>
+            <li><a href="https://upfinityteam.netlify.app/">Home</a></li>
             <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
             <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -160,7 +190,7 @@
       <div class="footer-container">
         <p class="copyright">© Upfinity. All rights reserved.</p>
         <div class="footer-links">
-          <a href="https://upfinity-git.github.io/upfinity-site/">Home</a>
+          <a href="https://upfinityteam.netlify.app/">Home</a>
           <a href="contact.html">Contact Us</a>
         </div>
       </div>
@@ -172,5 +202,6 @@
   </button>
 
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
