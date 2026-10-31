@@ -1,0 +1,19 @@
+UPFINITY — NETLIFY CONTACT FORM
+
+Contact form code:
+- contact.html contains a static Netlify form named "contact".
+- The form includes data-netlify="true" and the hidden form-name field.
+- The service checkboxes are inside the form.
+- js/contact.js submits URL-encoded data to Netlify's standard "/" endpoint.
+
+DEPLOYMENT:
+1. Publish the contents of this folder as the site publish directory.
+   index.html and contact.html must be at the publish-directory root.
+2. Trigger a fresh production deploy in Netlify.
+3. Open Netlify > Forms and confirm that a form named "contact" appears.
+4. Only after it appears, test the live form.
+
+If "contact" still does not appear, check the Netlify site's Build & deploy
+settings: the configured publish directory must point to this folder (the
+folder containing index.html and contact.html). Form detection happens during
+deployment; JavaScript cannot register a form by itself.
