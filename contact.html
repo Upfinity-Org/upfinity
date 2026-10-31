@@ -105,16 +105,15 @@
       <div class="contact-form-side">
         <p class="form-lead">Select the services you're interested in, then leave your details below.</p>
 
-        <div class="services-checkboxes">
-          <label><input type="checkbox" name="webdev"> Web Development</label>
-          <label><input type="checkbox" name="digmar"> Digital Marketing</label>
-          <label><input type="checkbox" name="analty"> Analytics</label>
-          <label><input type="checkbox" name="smm"> Social Media Marketing</label>
-          <label><input type="checkbox" name="poster"> Poster and Creative Design</label>
-          <label><input type="checkbox" name="logo"> Logo and Brand Identity</label>
-        </div>
-
         <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <div class="services-checkboxes">
+            <label><input type="checkbox" name="webdev" value="Web Development"> Web Development</label>
+            <label><input type="checkbox" name="digmar" value="Digital Marketing"> Digital Marketing</label>
+            <label><input type="checkbox" name="analty" value="Analytics"> Analytics</label>
+            <label><input type="checkbox" name="smm" value="Social Media Marketing"> Social Media Marketing</label>
+            <label><input type="checkbox" name="poster" value="Poster and Creative Design"> Poster and Creative Design</label>
+            <label><input type="checkbox" name="logo" value="Logo and Brand Identity"> Logo and Brand Identity</label>
+          </div>
           <input type="hidden" name="form-name" value="contact" />
           <p class="visually-hidden" aria-hidden="true">
             <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>

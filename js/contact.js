@@ -58,7 +58,7 @@
     }
     setNote("Sending your details…");
 
-    fetch("/contact.html", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode(payload)
